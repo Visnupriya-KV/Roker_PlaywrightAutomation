@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Selected API Tests (from CSV)", // Name that appears in menus
+        "type": "shell", // Execute a shell command
+        "command": "node", // The command to run
+        "args": [
+          "${workspaceFolder}/run-selected-api-tests.js" // Argument: path to your script
+          // Add "--project=chromium" here if you always want Chrome for this task
+          // ,"--project=chromium"
+        ],
+        "group": {
+          "kind": "test", // Group it under "Run Test Task"
+          "isDefault": true // Make it the default test task (optional)
+        },
+        "presentation": {
+          "echo": true,
+          "reveal": "always", // Show the terminal output
+          "focus": true,
+          "panel": "dedicated", // Use a dedicated terminal panel
+          "clear": true // Clear the terminal before running
+        },
+        "problemMatcher": [] // Usually empty for simple run scripts
+      }
+    ]
+  }
+  

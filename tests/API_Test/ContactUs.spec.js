@@ -1,7 +1,7 @@
 import { test, expect, request } from '@playwright/test';
 import config from '../API_JSON/ContactUs.json';
 
-test('OAuth → Login → Capture Token → Call Secured API', async ({ page }) => {
+test('API_ContactUs_Test:OAuth → Login → Capture Token → Call Secured API', async ({ page }) => {
   let accessToken = '';
 
   // Step 1: Capture token from OAuth response

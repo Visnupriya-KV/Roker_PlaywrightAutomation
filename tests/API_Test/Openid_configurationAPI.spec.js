@@ -1,7 +1,7 @@
 const { test, expect, request } = require('@playwright/test');
 const config = require('../API_JSON/openIdConfiguration.json'); // Adjust path as needed
 
-test('OpenID Configuration API', async () => {
+test('API_OpenIDConfiguration_Test: OpenID Configuration API', async () => {
   const apiContext = await request.newContext();
 
   const response = await apiContext.get(config.urls.openidConfiguration);

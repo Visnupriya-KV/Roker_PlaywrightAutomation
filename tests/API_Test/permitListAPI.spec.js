@@ -1,7 +1,7 @@
 import { test, expect, request } from '@playwright/test';
 import config from "../API_JSON/permitList.json";
 
-test('Permits List API', async ({ page }) => {
+test('API_Permits_Test: Permit List API', async ({ page }) => {
   let accessToken = '';
 
   // Step 1: Capture token from OAuth response
@@ -49,7 +49,7 @@ test('Permits List API', async ({ page }) => {
   expect(Array.isArray(responseBody.Result.data)).toBe(true);
 
   const data = responseBody.Result.data;
-  console.log('📦 Full API Response:', JSON.stringify(body, null, 2));
+  console.log('📦 Full API Response:', JSON.stringify(data, null, 2));
 });
 
 

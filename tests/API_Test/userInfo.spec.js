@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const playwright = require('playwright');
 const config = require('../API_JSON/userInfo.json');
 
-test('User info API', async ({ page }) => {
+test('API_UserInfo_Test: User info API', async ({ page }) => {
   let accessToken = '';
 
   page.on('response', async (response) => {

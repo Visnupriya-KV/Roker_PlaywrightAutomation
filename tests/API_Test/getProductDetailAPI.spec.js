@@ -1,7 +1,7 @@
 import { test, expect, request } from '@playwright/test';
 import config from '../API_JSON/getProductDetail.json'; // Adjust path as needed
 
-test('Get Product Details API', async ({ page }) => {
+test('API_GetProductDetail_Test:Get Product Details API', async ({ page }) => {
   let accessToken = '';
 
   // Step 1: Capture token from OAuth response
@@ -25,7 +25,7 @@ test('Get Product Details API', async ({ page }) => {
   await page.getByRole('button', { name: 'Log in' }).click();
 
   // Step 3: Wait for token to be captured
-  await page.waitForTimeout(5000);
+  await page.waitForTimeout(8000);
   expect(accessToken).toBeTruthy();
 
   // Step 4: Create API context with token

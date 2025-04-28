@@ -1,7 +1,7 @@
 const { test, expect, request } = require('@playwright/test');
 const config = require('../API_JSON/AccountConfiguration.json');
 
-test('Account Configuration API', async ({ page }) => {
+test('API_AccountConfiguration_Test:Account Configuration API', async ({ page }) => {
   let accessToken = '';
 
   page.on('response', async (response) => {
