@@ -6,3 +6,4 @@ S.No,Control,TestCaseID,Module,Author,Description
 5,Y,API_Permits_Test,API_Regression,Visnu,API_Check
 6,Y,API_UserInfo_Test,API_Regression,Visnu,API_Check
 7,Y,API_BusinessProfile_Test,API_Regression,Visnu,API_Check
+8,Y,API_BusinessProfile_Test,API_Regression,Visnu,API_Check
